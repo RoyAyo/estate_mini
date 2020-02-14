@@ -16,5 +16,6 @@
 // });
 
 Route::get('/','HomesController@index')->name('home');
+Route::get('/dashboard','HomesController@dashboard')->name('dashboard');
 
 Auth::routes();
