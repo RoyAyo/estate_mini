@@ -27,4 +27,8 @@ class HomesController extends Controller
     		return view('dashboards.investor')
     	}
     }
+
+    public function aim(){
+        return view('auth.aim');
+    }
 }
