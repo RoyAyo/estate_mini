@@ -15,6 +15,7 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('wallet_balance');
             $table->timestamps();
         });
     }
