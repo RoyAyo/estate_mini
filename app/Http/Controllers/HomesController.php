@@ -11,6 +11,9 @@ class HomesController extends Controller
     }
 
     public function index(){
+        if (is_null(auth()->user()->id)) {
+            return view('home');
+        }
     	return view('home');
     }
 
