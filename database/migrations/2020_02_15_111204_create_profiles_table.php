@@ -17,6 +17,7 @@ class CreateProfilesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id')->unsigned();
             $table->integer('wallet_balance');
+            $table->integer('total_worth');
             $table->timestamps();
         });
     }
