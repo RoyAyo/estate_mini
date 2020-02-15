@@ -15,6 +15,6 @@ class HomesController extends Controller
     }
 
     public function dashboard(){
-    	return view('dashboard');
+    	$user_type = auth()->user()->user_type
     }
 }
