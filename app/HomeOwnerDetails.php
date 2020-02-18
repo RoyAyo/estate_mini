@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Estate extends Model
+class HomeOwnerDetails extends Model
 {
-    
+    //
 }
