@@ -19,7 +19,7 @@ class CreateOfferingsTable extends Migration
             $table->integer('estate_id')->unsigned();
             $table->integer('offer_price');
             $table->integer('no_of_tokens');
-            $table->integer('no_approved');
+            $table->integer('approved');
             $table->timestamps();
         });
     }
