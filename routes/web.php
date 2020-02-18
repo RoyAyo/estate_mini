@@ -20,4 +20,6 @@ Route::get('/aim','UsersController@aim')->name('aim');
 Route::post('/aim','UsersController@postaim')->name('user.aim');
 Route::get('/dashboard','HomesController@dashboard')->name('dashboard');
 
+Route::get('/lease','HomeOwnersController@lease')->name('lease');
+
 Auth::routes();
