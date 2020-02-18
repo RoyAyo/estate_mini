@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHomeOwnerDetailsTable extends Migration
+class CreateEstatePicturesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateHomeOwnerDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('home_owner_details', function (Blueprint $table) {
+        Schema::create('estate_pictures', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->integer('offer');
-            $table->string('p.o.w');
-            $table->string('diligence_report');
+            $table->integer('home_owner_details_id');
+            $table->string('picture');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateHomeOwnerDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('home_owner_details');
+        Schema::dropIfExists('estate_pictures');
     }
 }
