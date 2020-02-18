@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Estate extends Model
 {
-    
+    protected $fillable = [
+    	'estate_name','initial_value','tokens','current_value'
+    ]; 
+
+    public function user(){
+    	return $this->belongsTo('App\User');
+    }
 }
