@@ -21,5 +21,6 @@ Route::post('/aim','UsersController@postaim')->name('user.aim');
 Route::get('/dashboard','HomesController@dashboard')->name('dashboard');
 
 Route::get('/lease','HomeOwnersController@lease')->name('lease');
+Route::post('/lease','HomeOwnersController@submitlease')->name('lease.submit');
 
 Auth::routes();
