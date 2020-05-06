@@ -16,15 +16,4 @@ class HomesController extends Controller
         }
     	return view('home');
     }
-
-    public function dashboard(){
-    	$user_type = auth()->user()->user_type;
-    	if ($user_type == 1) {
-    		return view('dashboards.admin');
-    	}elseif ($user_type == 2) {
-    		return view('dashboards.owner');
-    	}else{
-    		return view('dashboards.investor')
-    	}
-    }
 }
