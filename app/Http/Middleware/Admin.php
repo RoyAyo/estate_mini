@@ -18,7 +18,7 @@ class Admin
     {
         $user_type= Auth::user()->user_type;
 
-        if ($user_type != '1') {
+        if ($user_type !== '1') {
             return redirect()->back();
         }
 
