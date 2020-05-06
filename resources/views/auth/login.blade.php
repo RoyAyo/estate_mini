@@ -1,13 +1,13 @@
 <form method="POST" action="">
 	@csrf
-	<div style="margin-bottom: 0.3rem;">
+	<div style="margin-bottom: 0.4rem;">
 		<label style="font-weight: bold;">Email :</label>
-		<input type="text" id="email" name="email" value="{{ old('email') }}" style="border-radius: 5px;width:60vw;padding: 0.4rem;">
+		<input type="text" id="email" name="email" value="{{ old('email') }}">
 	</div>
-	<div>
+	<div style="margin-bottom: 0.4rem">
 		<label style="font-weight: bold;">Login : </label>
-		<input type="password" id="password" name="password" value="{{ old('password') }}" style="border-radius: 5px;width:60vw;padding: 0.4rem;">
+		<input type="password" id="password" name="password" value="{{ old('password') }}">
 	</div>
-	<button style="padding: 0.4rem;border-radius: 0.13rem;background-color: skyblue">Log In</button>
+	<button>Log In</button>
 	Don't Have an account? <a href="{{ route('register') }}" style="color: red;">Sign Up</a>
 </form>
