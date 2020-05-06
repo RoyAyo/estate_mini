@@ -16,6 +16,7 @@ class HomesController extends Controller
         }
     	return view('home');
     }
+<<<<<<< HEAD
 
     public function dashboard(){
     	$user_type = auth()->user()->user_type;
@@ -31,4 +32,6 @@ class HomesController extends Controller
     public function aim(){
         return view('auth.aim');
     }
+=======
+>>>>>>> 99021b1
 }

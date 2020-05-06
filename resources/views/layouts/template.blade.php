@@ -19,6 +19,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style type="text/css">
+        input{
+            border-radius: 5px;
+            width:60vw;
+        }
+    </style>
 </head>
 <body>
     @yield('content')
